@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript AI - Nishan Chathuranga</title>
+	<link rel="stylesheet" type="text/css" href="./style.css"/>
+	<script type="text/JavaScript" src="script.js"></script>
+</head>
+<body>
+<div class="scene">
+	<div class="grass" id="topDebug"></div>
+		<div class="road">
+			<div class="ai" id="ai">
+				<div class="sensor1">1</div>
+				<div class="sensor2" id="sensor2">2</div>
+				<div class="sensor3">3</div>
+			</div>
+
+			<div class="wall" id="wall">
+
+			</div>
+		</div>
+	<div class="grass"></div>
+</div>
+<div class="debugArea">
+	
+	<input type="text" id="stepsDone" value="0" style="width: 50px" />
+	<input type="button" value="Start" onclick="runSim('1')"/>
+	<input type="button" value="Stop" onclick="runSim('0')"/>
+	<br>
+	<table  class="tableDebug">
+		<tr>
+			<td>AI zone</td>
+			<td>Wall zone</td>
+			<td>Experience success</td>
+			<td>Experience suggestion</td>
+			<td>Trying</td>
+		</tr>
+		<tr>
+			<td id="t_ai_zone">-</td>
+			<td id="t_wall_zone">-</td>
+			<td id="t_exp_success">-</td>
+			<td id="t_exp_sugg">-</td>
+			<td id="t_try">-</td>
+		</tr>
+	</table>
+	<table  class="tableDebugx">
+		<tr><td>{AI zone}{Wall zone}{Do}</td><td>{Success}</td><td rowspan="9"><textarea id="debugTextarea" class="debugTextareaClass">N/A</textarea></td></tr>
+		<tr><td id="exp_1">000</td><td id="succ_000">0</td></tr>
+		<tr><td id="exp_2">001</td><td id="succ_001">0</td></tr>
+		<tr><td id="exp_3">010</td><td id="succ_010">0</td></tr>
+		<tr><td id="exp_4">011</td><td id="succ_011">0</td></tr>
+		<tr><td id="exp_5">100</td><td id="succ_100">0</td></tr>
+		<tr><td id="exp_6">101</td><td id="succ_101">0</td></tr>
+		<tr><td id="exp_7">110</td><td id="succ_110">0</td></tr>
+		<tr><td id="exp_8">111</td><td id="succ_111">0</td></tr>
+	</table><br><br>
+</div>
+</body>
+</html>
