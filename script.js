@@ -1,3 +1,5 @@
+//Nishan Chathuranga
+
 var c = 0;
 var aiPos = 0;
 var walls = 0;
